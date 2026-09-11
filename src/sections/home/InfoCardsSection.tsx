@@ -23,6 +23,7 @@ export function InfoCardsSection() {
             const Doodle = doodleMap[card.doodle]
             return (
               <InfoCard
+                headingLevel="h2"
                 key={card.title}
                 doodle={<Doodle />}
                 title={card.title}

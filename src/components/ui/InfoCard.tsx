@@ -11,6 +11,7 @@ export interface InfoCardProps {
   to?: string
   href?: string
   accent?: Accent
+  headingLevel?: 'h2' | 'h3'
   className?: string
 }
 
@@ -23,14 +24,16 @@ export function InfoCard({
   to,
   href,
   accent = 'blue',
+  headingLevel = 'h3',
   className,
 }: InfoCardProps) {
+  const Heading = headingLevel
   return (
     <div className={[styles.card, className].filter(Boolean).join(' ')}>
       <span className={styles.doodle} aria-hidden="true">
         {doodle}
       </span>
-      <h3 className={styles.title}>{title}</h3>
+      <Heading className={styles.title}>{title}</Heading>
       <p className={styles.text}>{text}</p>
       <ArrowButton label={linkLabel} accent={accent} to={to} href={href} />
     </div>

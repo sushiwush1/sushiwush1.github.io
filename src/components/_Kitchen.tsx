@@ -13,7 +13,6 @@ import { ProcessCard } from './ui/ProcessCard'
 import { Reveal } from './ui/Reveal'
 import { RichText } from './ui/RichText'
 import { SectionHeading } from './ui/SectionHeading'
-import { SkillBar } from './ui/SkillBar'
 import { Sticker } from './ui/Sticker'
 import { TextArea } from './ui/TextArea'
 import { TextField } from './ui/TextField'
@@ -204,10 +203,7 @@ export function Kitchen() {
 
       <section className="container">
         <h2>Skill bars</h2>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: 320 }}>
-          <SkillBar label="Sample skill" value="Daily" level={90} accent="blue" />
-          <SkillBar label="Another skill" value="Weekly" level={60} accent="green" />
-        </div>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: 320 }}></div>
       </section>
 
       <section className="container">

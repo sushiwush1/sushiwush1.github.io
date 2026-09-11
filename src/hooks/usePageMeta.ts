@@ -1,21 +1,26 @@
 import { useEffect } from 'react'
 
 const SITE_NAME = 'Kanishka Yadav'
-const DESCRIPTION_SELECTOR = 'meta[name="description"]'
+const ORIGIN = 'https://sushiwush1.github.io'
 
-/** Sets document.title and the meta description for the current page. */
+function setContent(selector: string, value: string) {
+  document.querySelector(selector)?.setAttribute('content', value)
+}
+
+/** Keeps the title, description, canonical link and social tags in sync with the current route. */
 export function usePageMeta(title: string, description: string): void {
   useEffect(() => {
-    const previousTitle = document.title
-    document.title = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`
+    const fullTitle = title.includes(SITE_NAME) ? title : `${title} | ${SITE_NAME}`
+    const path = window.location.pathname.replace(/\/?$/, '/')
+    const canonical = `${ORIGIN}${path}`
 
-    const meta = document.querySelector(DESCRIPTION_SELECTOR)
-    const previousDescription = meta?.getAttribute('content') ?? ''
-    meta?.setAttribute('content', description)
-
-    return () => {
-      document.title = previousTitle
-      meta?.setAttribute('content', previousDescription)
-    }
+    document.title = fullTitle
+    setContent('meta[name="description"]', description)
+    setContent('meta[property="og:title"]', fullTitle)
+    setContent('meta[property="og:description"]', description)
+    setContent('meta[property="og:url"]', canonical)
+    setContent('meta[name="twitter:title"]', fullTitle)
+    setContent('meta[name="twitter:description"]', description)
+    document.querySelector('link[rel="canonical"]')?.setAttribute('href', canonical)
   }, [title, description])
 }
