@@ -1,0 +1,32 @@
+.hero {
+  background: var(--color-purple);
+  padding-top: var(--section-padding-y);
+  padding-bottom: calc(var(--section-padding-y) * 0.55);
+  text-align: center;
+}
+
+.heading {
+  font-size: var(--fs-heading-1);
+  line-height: var(--lh-heading-1);
+  letter-spacing: var(--ls-heading-1);
+  margin-bottom: var(--space-20);
+}
+
+.intro {
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-body-lg);
+  max-width: 640px;
+  margin-inline: auto;
+}
+
+.listSection {
+  padding-top: 0;
+  padding-bottom: var(--section-padding-y);
+  margin-top: calc(-1 * var(--space-70));
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-40);
+}

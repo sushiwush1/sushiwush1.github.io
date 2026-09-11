@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Plain-text profile for AI assistants and LLM crawlers
+# https://sushiwush1.github.io/llms.txt
+# https://sushiwush1.github.io/llms-full.txt
+
+Sitemap: https://sushiwush1.github.io/sitemap.xml

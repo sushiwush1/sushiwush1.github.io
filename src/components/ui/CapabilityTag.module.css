@@ -1,0 +1,27 @@
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  height: 46px;
+  padding: 0 22px;
+  border-radius: var(--radius-pill);
+  border: var(--border);
+  background: var(--color-white);
+  font-size: 1.375rem;
+  transition: background-color 0.2s var(--ease-out);
+}
+
+.tag:hover {
+  background: var(--color-light);
+  will-change: background-color;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-dark);
+  flex-shrink: 0;
+}

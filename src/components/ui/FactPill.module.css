@@ -1,0 +1,35 @@
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 13px;
+  max-width: 100%;
+  box-sizing: border-box;
+  background: var(--color-white);
+  border: var(--border);
+  border-radius: var(--radius-pill);
+  padding: 19px 25px;
+}
+
+.number {
+  font-size: clamp(1.75rem, 1rem + 4vw, 3.5rem);
+  line-height: 1;
+  font-weight: var(--fw-medium);
+  color: var(--glyph-fill, var(--color-purple-soft));
+  -webkit-text-stroke: 1.25px var(--color-dark);
+  white-space: nowrap;
+}
+
+@supports not (-webkit-text-stroke: 1px black) {
+  .number {
+    color: var(--color-dark);
+    -webkit-text-stroke: initial;
+  }
+}
+
+.label {
+  width: 140px;
+  max-width: 45vw;
+  font-size: var(--fs-body);
+  line-height: 1.25;
+  color: var(--color-dark);
+}

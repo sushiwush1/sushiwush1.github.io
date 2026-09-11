@@ -1,0 +1,78 @@
+.band {
+  background: var(--color-purple);
+  padding-block: var(--section-padding-y);
+  min-height: calc(100vh - var(--nav-height) - var(--nav-top-offset) * 2);
+  display: flex;
+  align-items: center;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-24);
+  max-width: 640px;
+}
+
+.heading {
+  font-size: var(--fs-display-3);
+  line-height: var(--lh-display-3);
+  letter-spacing: var(--ls-display-3);
+  font-weight: var(--fw-regular);
+}
+
+.intro {
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-body-lg);
+  color: var(--color-dark);
+}
+
+.action {
+  margin-top: var(--space-16);
+}
+
+.doodle {
+  position: absolute;
+  display: block;
+  color: var(--color-dark);
+}
+
+.doodleStar {
+  width: 70px;
+  height: 70px;
+  top: -20px;
+  left: -40px;
+}
+
+.doodleSparkle {
+  width: 56px;
+  height: 56px;
+  top: 10%;
+  right: -30px;
+}
+
+.doodleSquiggle {
+  width: 90px;
+  height: 90px;
+  bottom: -10px;
+  left: -20px;
+}
+
+.doodleArrow {
+  width: 80px;
+  height: 60px;
+  bottom: 20%;
+  right: -60px;
+  transform: scaleX(-1);
+}
+
+@media (max-width: 809.98px) {
+  .doodleStar,
+  .doodleSparkle,
+  .doodleSquiggle,
+  .doodleArrow {
+    display: none;
+  }
+}

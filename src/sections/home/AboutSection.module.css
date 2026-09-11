@@ -1,0 +1,193 @@
+.section {
+  padding-block: var(--section-padding-y);
+  scroll-margin-top: calc(var(--nav-top-offset-sticky) + var(--nav-height) + var(--space-20));
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 440px 1fr;
+  gap: var(--space-70);
+  align-items: center;
+}
+
+.photoCol {
+  display: flex;
+  justify-content: center;
+}
+
+.photoWrap {
+  position: relative;
+  width: 100%;
+  max-width: 440px;
+}
+
+.photo {
+  width: 100%;
+}
+
+.badge {
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+}
+
+.textCol {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-20);
+}
+
+.heading {
+  font-size: var(--fs-heading-1);
+  line-height: var(--lh-heading-1);
+  letter-spacing: var(--ls-heading-1);
+}
+
+.greeting {
+  font-style: italic;
+}
+
+.paragraph {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+}
+
+.toolsHeading {
+  margin-top: var(--space-16);
+  font-size: var(--fs-heading-4);
+  line-height: var(--lh-heading-4);
+  letter-spacing: var(--ls-heading-4);
+}
+
+.toolGroups {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-16);
+}
+
+.toolGroup {
+  border: var(--border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.toolGroupHeader {
+  padding: var(--space-12) var(--space-16);
+  background: var(--fill, var(--color-purple));
+  border-bottom: var(--border);
+  font-size: var(--fs-label-s);
+  line-height: var(--lh-label-s);
+  font-weight: var(--fw-medium);
+}
+
+.toolList {
+  padding: var(--space-16);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+}
+
+.toolPill {
+  border: var(--border);
+  border-radius: var(--radius-pill);
+  padding: var(--space-4) var(--space-12);
+  font-size: var(--fs-label-s);
+  line-height: var(--lh-label-s);
+}
+
+.capabilities {
+  margin-top: 140px;
+}
+
+.capabilityTags {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-16);
+}
+
+.outside {
+  margin-top: 140px;
+}
+
+.outsideHeading {
+  text-align: center;
+  font-size: var(--fs-heading-2);
+  line-height: var(--lh-heading-2);
+  letter-spacing: var(--ls-heading-2);
+}
+
+.outsideGrid {
+  margin-top: var(--space-50);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-24);
+}
+
+.outsideCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-24);
+  background: var(--color-white);
+  border: var(--border);
+  border-radius: var(--radius-md);
+  padding: 40px 40px 50px;
+}
+
+.outsideDoodle {
+  width: 68px;
+  height: 68px;
+  color: var(--color-dark);
+}
+
+.outsideTitle {
+  font-size: var(--fs-heading-3);
+  line-height: var(--lh-heading-3);
+  letter-spacing: var(--ls-heading-3);
+}
+
+.outsideText {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+}
+
+@media (max-width: 1299.98px) {
+  .top {
+    grid-template-columns: 1fr;
+    gap: var(--space-50);
+  }
+
+  .photoCol {
+    order: -1;
+  }
+
+  .toolGroups {
+    grid-template-columns: 1fr;
+  }
+
+  .outsideGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .capabilities,
+  .outside {
+    margin-top: 100px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .heading,
+  .textCol {
+    text-align: left;
+  }
+
+  .badge {
+    bottom: -20px;
+    left: -10px;
+  }
+}

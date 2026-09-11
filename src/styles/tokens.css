@@ -1,0 +1,151 @@
+:root {
+  /* Color: main */
+  --color-dark: #1d1d1d;
+  --color-white: #ffffff;
+  --color-light: #f7f7f7;
+
+  /* Color: accents */
+  --color-purple: #e3e3ff;
+  --color-blue: #e3f2ff;
+  --color-pink: #ffe3fb;
+  --color-yellow: #ffe7a9;
+  --color-green: #dbf5f0;
+  --color-lime: #e9fac0;
+  --color-powder: #fbebea;
+  --color-red: #fabfc9;
+
+  /* Color: hover variants */
+  --color-blue-hover: #d1e8fd;
+  --color-green-hover: #c8f0e8;
+  --color-purple-hover: #d8d8ff;
+  --color-pink-hover: #f9d4f4;
+  --color-yellow-hover: #fede8d;
+  --color-lime-hover: #dbf2a5;
+  --color-powder-hover: #fadedc;
+  --color-red-hover: #f9afbc;
+
+  /* Color: soft variants (large panels) */
+  --color-purple-soft: #f0f0ff;
+  --color-blue-soft: #eef7ff;
+  --color-green-soft: #e9f9f6;
+  --color-lime-soft: #f2fcd9;
+  --color-powder-soft: #fdf3f2;
+  --color-yellow-soft: #fff2d0;
+  --color-pink-soft: #fff1fd;
+  --color-red-soft: #fcd9df;
+
+  --color-muted: #888888;
+  --color-error: #b3261e;
+
+  /* Semantic aliases */
+  --color-bg: var(--color-white);
+  --color-text: var(--color-dark);
+  --color-border: var(--color-dark);
+
+  /* Typography */
+  --font-sans:
+    'Uncut Sans Variable', 'Uncut Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-script: 'Caveat', system-ui, -apple-system, 'Segoe UI', cursive;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+
+  /* Type scale: fluid clamp() between phone (< 810px) and desktop (>= 1300px) values */
+  --fs-display-1: clamp(3.125rem, 1.7rem + 5.9vw, 5.25rem); /* 50 -> 84 */
+  --lh-display-1: 1.05;
+  --ls-display-1: -0.05em;
+
+  --fs-display-3: clamp(2.25rem, 1.7rem + 2.2vw, 2.875rem); /* 36 -> 46 */
+  --lh-display-3: 1.125;
+  --ls-display-3: -0.04em;
+
+  --fs-heading-1: clamp(2.375rem, 1.65rem + 3vw, 3.125rem); /* 38 -> 50 */
+  --lh-heading-1: 1.1;
+  --ls-heading-1: -0.04em;
+
+  --fs-heading-2: clamp(1.75rem, 1.35rem + 1.65vw, 2.125rem); /* 28 -> 34 */
+  --lh-heading-2: 1.175;
+  --ls-heading-2: -0.03em;
+
+  --fs-heading-3: 1.375rem; /* 22, constant */
+  --lh-heading-3: 1.275;
+  --ls-heading-3: -0.02em;
+
+  --fs-heading-4: 1.25rem; /* 20, constant */
+  --lh-heading-4: 1.3;
+  --ls-heading-4: -0.02em;
+
+  --fs-body-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.375rem); /* 20 -> 22 */
+  --lh-body-lg: 1.45;
+
+  --fs-body: 1.125rem; /* 18, constant */
+  --lh-body: 1.55;
+
+  --fs-label-s: 0.9375rem; /* 15, constant */
+  --lh-label-s: 1.4;
+
+  --fs-button: 1.0625rem; /* 17, constant */
+  --lh-button: 1.175;
+  --ls-button: -0.02em;
+
+  --fs-nav-link: 1.125rem; /* 18, constant */
+  --lh-nav-link: 1.25;
+  --ls-nav-link: -0.02em;
+
+  --fs-badge: 1rem; /* 16, constant */
+  --lh-badge: 1;
+  --ls-badge: -0.02em;
+
+  /* Spacing */
+  --space-4: 0.25rem;
+  --space-8: 0.5rem;
+  --space-12: 0.75rem;
+  --space-16: 1rem;
+  --space-20: 1.25rem;
+  --space-24: 1.5rem;
+  --space-30: 1.875rem;
+  --space-40: 2.5rem;
+  --space-50: 3.125rem;
+  --space-60: 3.75rem;
+  --space-70: 4.375rem;
+  --space-120: 7.5rem;
+
+  /* Radii */
+  --radius-sm: 10px;
+  --radius-md: 20px;
+  --radius-pill: 50px;
+
+  /* Border */
+  --border-width: 1px;
+  --border: var(--border-width) solid var(--color-dark);
+
+  /* Button shadow */
+  --shadow-button: inset 0 -5px 0 0 rgba(29, 29, 29, 0.15);
+  --shadow-button-active: inset 0 -2px 0 0 rgba(29, 29, 29, 0.15);
+
+  /* Layout */
+  --container-max: 1200px;
+  --side-padding: clamp(1.875rem, 0.5rem + 4.3vw, 3.125rem); /* 30 -> 50 */
+
+  --section-padding-y: 6.25rem; /* 100px phone default */
+  --nav-height: 76px;
+  --nav-top-offset: 40px;
+  --nav-top-offset-sticky: 20px;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-reveal: 0.6s;
+  --reveal-distance: 20px;
+}
+
+@media (min-width: 810px) {
+  :root {
+    --section-padding-y: 8.75rem; /* 140px tablet */
+  }
+}
+
+@media (min-width: 1300px) {
+  :root {
+    --section-padding-y: 10rem; /* 160px desktop */
+  }
+}

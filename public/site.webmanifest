@@ -1,0 +1,20 @@
+{
+  "name": "Kanishka Yadav | HR and People Operations",
+  "short_name": "Kanishka Yadav",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#e3e3ff",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ]
+}

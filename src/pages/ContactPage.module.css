@@ -1,0 +1,210 @@
+.band {
+  position: relative;
+  overflow: hidden;
+  background: var(--color-purple);
+  padding-block-start: var(--section-padding-y);
+  padding-block-end: 260px;
+}
+
+.bandInner {
+  max-width: 700px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-20);
+  text-align: center;
+}
+
+.heading {
+  font-size: var(--fs-display-1);
+  line-height: var(--lh-display-1);
+  letter-spacing: var(--ls-display-1);
+  font-weight: var(--fw-regular);
+}
+
+.intro {
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-body-lg);
+  color: var(--color-dark);
+  max-width: 520px;
+}
+
+.doodle {
+  position: absolute;
+  top: 14%;
+  width: 90px;
+  height: 90px;
+  color: var(--color-dark);
+}
+
+.doodleLeft {
+  left: 3%;
+}
+
+.doodleRight {
+  right: 3%;
+  top: 8%;
+}
+
+@media (max-width: 1299.98px) {
+  .doodle {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+.cardSection {
+  position: relative;
+  z-index: 1;
+  margin-top: -200px;
+  padding-bottom: var(--section-padding-y);
+}
+
+.card {
+  background: var(--color-white);
+  border: var(--border);
+  border-radius: var(--radius-md);
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-60);
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-16);
+}
+
+.cardHeading {
+  font-size: var(--fs-heading-2);
+  line-height: var(--lh-heading-2);
+  letter-spacing: var(--ls-heading-2);
+  font-weight: var(--fw-regular);
+}
+
+.cardIntro {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-24);
+  margin-top: var(--space-8);
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-16);
+}
+
+.rowIcon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  color: var(--color-dark);
+}
+
+.rowText {
+  display: flex;
+  flex-direction: column;
+}
+
+.rowLabel {
+  font-size: var(--fs-heading-4);
+  line-height: var(--lh-heading-4);
+  letter-spacing: var(--ls-heading-4);
+}
+
+.rowValue {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-dark);
+}
+
+a.rowValue {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+a.rowValue:hover {
+  color: var(--color-muted);
+}
+
+.visuallyHidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  gap: var(--space-24);
+}
+
+.messageField textarea {
+  min-height: 140px;
+}
+
+.submitButton {
+  align-self: flex-start;
+}
+
+.formNote {
+  font-size: var(--fs-label-s);
+  line-height: var(--lh-label-s);
+  color: var(--color-muted);
+  margin-top: calc(-1 * var(--space-8));
+}
+
+.faqWrap {
+  margin-top: var(--space-70);
+  max-width: 700px;
+  margin-inline: auto;
+}
+
+@media (max-width: 1299.98px) {
+  .cardSection {
+    margin-top: -160px;
+  }
+
+  .card {
+    gap: var(--space-40);
+    padding: 50px;
+  }
+}
+
+@media (max-width: 809.98px) {
+  .band {
+    padding-block-end: 140px;
+  }
+
+  .doodle {
+    display: none;
+  }
+
+  .cardSection {
+    margin-top: -100px;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+    padding: 30px;
+    gap: var(--space-40);
+  }
+}

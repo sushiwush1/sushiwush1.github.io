@@ -1,0 +1,19 @@
+.section {
+  background: var(--color-purple);
+  padding-bottom: var(--section-padding-y);
+  padding-top: var(--space-120);
+}
+
+.pills {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-20);
+}
+
+@media (max-width: 809.98px) {
+  .pills {
+    margin-top: var(--space-50);
+  }
+}

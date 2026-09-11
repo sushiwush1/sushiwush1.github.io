@@ -1,0 +1,30 @@
+.section {
+  padding-block: var(--section-padding-y);
+  background: var(--color-light);
+}
+
+.grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-30);
+}
+
+.more {
+  margin-top: var(--space-60);
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1299.98px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 809.98px) {
+  .grid {
+    grid-template-columns: 1fr;
+    margin-top: var(--space-50);
+  }
+}

@@ -1,0 +1,18 @@
+.section {
+  padding-block: var(--section-padding-y);
+}
+
+.grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-40) var(--space-30);
+}
+
+@media (max-width: 809.98px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-50);
+    margin-top: var(--space-50);
+  }
+}

@@ -1,0 +1,19 @@
+.heading {
+  text-align: center;
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+.title {
+  font-size: var(--fs-display-3);
+  line-height: var(--lh-display-3);
+  letter-spacing: var(--ls-display-3);
+  font-weight: var(--fw-regular);
+}
+
+.intro {
+  margin-top: var(--space-20);
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-body-lg);
+  color: var(--color-dark);
+}

@@ -1,0 +1,28 @@
+.sticker {
+  position: absolute;
+  display: inline-block;
+  transform: rotate(var(--rotate, -6deg));
+  transition: transform 0.3s var(--ease-out);
+}
+
+.sticker:hover {
+  transform: rotate(var(--rotate, -6deg)) translateY(-4px);
+  will-change: transform;
+}
+
+.doodle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  color: var(--color-dark);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sticker {
+    transition: none;
+  }
+
+  .sticker:hover {
+    transform: rotate(var(--rotate, -6deg));
+  }
+}

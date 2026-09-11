@@ -1,0 +1,31 @@
+.arrowButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 40px;
+  border-radius: var(--radius-pill);
+  border: var(--border);
+  background: var(--fill, var(--color-blue));
+  color: var(--color-dark);
+  transition:
+    background-color 0.2s var(--ease-out),
+    transform 0.2s var(--ease-out);
+}
+
+.arrowButton:hover {
+  background: var(--fill-hover, var(--color-blue-hover));
+  transform: translateX(3px);
+  will-change: background-color, transform;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arrowButton {
+    transition: none;
+  }
+}

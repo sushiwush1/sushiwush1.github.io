@@ -1,0 +1,70 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.dateBadge {
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+  border-radius: var(--radius-pill);
+  border: var(--border);
+  background: var(--fill, var(--color-lime));
+  font-size: var(--fs-label-s);
+  line-height: var(--lh-label-s);
+  transform: translateY(1px);
+  z-index: 1;
+}
+
+.card {
+  width: 100%;
+  background: var(--color-white);
+  border: var(--border);
+  border-radius: var(--radius-md);
+  padding: 60px 45px 45px;
+  margin-top: -20px;
+}
+
+.title {
+  font-size: var(--fs-heading-3);
+  line-height: var(--lh-heading-3);
+  letter-spacing: var(--ls-heading-3);
+}
+
+.meta {
+  margin-top: var(--space-8);
+  color: var(--color-muted);
+  font-size: var(--fs-body);
+}
+
+.bullets {
+  margin-top: var(--space-24);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.bullet {
+  display: flex;
+  gap: var(--space-12);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+}
+
+.bullet::before {
+  content: '';
+  flex-shrink: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  margin-top: 0.7em;
+}
+
+@media (max-width: 809.98px) {
+  .card {
+    padding: 50px 30px 30px;
+  }
+}

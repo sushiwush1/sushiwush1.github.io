@@ -1,0 +1,45 @@
+.circleWrap {
+  position: relative;
+  width: var(--size, 80px);
+  height: var(--size, 80px);
+  border-radius: 50%;
+  overflow: hidden;
+  border: var(--border);
+  flex-shrink: 0;
+}
+
+.circleImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blobWrap {
+  position: relative;
+  width: 100%;
+  max-width: var(--size, 560px);
+  aspect-ratio: 1 / 1;
+  background: var(--fill, var(--color-yellow));
+}
+
+.blobSvg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.blobOutline {
+  fill: none;
+  stroke: var(--color-dark);
+  stroke-width: 1;
+}
+
+.blobImg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}

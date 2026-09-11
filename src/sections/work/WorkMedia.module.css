@@ -1,0 +1,113 @@
+.panel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 3;
+  border: var(--border);
+  border-radius: var(--radius-md);
+  background: var(--fill, var(--color-purple-soft));
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  aspect-ratio: 2 / 1;
+}
+
+.document {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  width: min(66%, 320px);
+  background: var(--color-white);
+  border: var(--border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-20) var(--space-24);
+  transform: rotate(-3deg);
+}
+
+.hero .document {
+  width: min(46%, 380px);
+  padding: var(--space-24) var(--space-30);
+}
+
+.label {
+  font-size: var(--fs-label-s);
+  line-height: var(--lh-label-s);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+}
+
+.line {
+  height: 7px;
+  border-radius: var(--radius-pill);
+  background: var(--color-dark);
+  opacity: 0.14;
+}
+
+.doodle {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 68px;
+  height: 68px;
+  color: var(--color-dark);
+}
+
+.hero .doodle {
+  width: 92px;
+  height: 92px;
+}
+
+.doodleOne {
+  top: 10%;
+  left: 8%;
+  transform: rotate(-10deg);
+}
+
+.doodleTwo {
+  right: 10%;
+  bottom: 12%;
+  transform: rotate(8deg);
+}
+
+.doodleThree {
+  top: 14%;
+  right: 14%;
+  width: 44px;
+  height: 44px;
+  transform: rotate(14deg);
+}
+
+.hero .doodleThree {
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 809.98px) {
+  .doodle {
+    width: 52px;
+    height: 52px;
+  }
+
+  .hero .doodle {
+    width: 68px;
+    height: 68px;
+  }
+
+  .doodleThree {
+    width: 34px;
+    height: 34px;
+  }
+}
