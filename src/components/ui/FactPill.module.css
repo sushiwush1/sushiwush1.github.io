@@ -15,16 +15,8 @@
   line-height: 1;
   font-weight: var(--fw-medium);
   color: var(--color-dark);
-  -webkit-text-fill-color: var(--glyph-fill, var(--color-purple-soft));
-  -webkit-text-stroke: 1.25px var(--color-dark);
+  text-shadow: 0.05em 0.05em 0 var(--glyph-fill, var(--color-purple));
   white-space: nowrap;
-}
-
-@supports not (-webkit-text-stroke: 1px black) {
-  .number {
-    -webkit-text-fill-color: currentColor;
-    -webkit-text-stroke: initial;
-  }
 }
 
 .label {

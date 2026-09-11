@@ -1,4 +1,4 @@
-import { accentSoftVar, type Accent } from './accent'
+import { accentVar, type Accent } from './accent'
 import styles from './FactPill.module.css'
 
 export interface FactPillProps {
@@ -12,7 +12,7 @@ export interface FactPillProps {
 /** Outlined big number pill used in the "numbers" stat row. */
 export function FactPill({ value, label, accent = 'purple', className }: FactPillProps) {
   const style = {
-    '--glyph-fill': accentSoftVar(accent),
+    '--glyph-fill': accentVar(accent),
   } as React.CSSProperties
 
   return (
