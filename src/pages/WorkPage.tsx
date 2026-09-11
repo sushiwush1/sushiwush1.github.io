@@ -29,6 +29,7 @@ export function WorkPage() {
               <li key={item.slug}>
                 <Reveal delayMs={index * 80}>
                   <PortfolioCard
+                    headingLevel="h2"
                     title={item.title}
                     meta={item.tags}
                     summary={item.summary}

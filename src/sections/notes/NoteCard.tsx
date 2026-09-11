@@ -7,6 +7,7 @@ import styles from './NoteCard.module.css'
 
 export interface NoteCardProps {
   note: NoteItem
+  headingLevel?: 'h2' | 'h3'
 }
 
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
@@ -16,7 +17,8 @@ const dateFormatter = new Intl.DateTimeFormat('en-US', {
 })
 
 /** Note preview card: accent doodle panel, date and reading time, title, excerpt. */
-export function NoteCard({ note }: NoteCardProps) {
+export function NoteCard({ note, headingLevel = 'h3' }: NoteCardProps) {
+  const Heading = headingLevel
   const Doodle = doodleMap[note.doodle]
   const style = { '--fill': accentSoftVar(note.accent) } as CSSProperties
   const formattedDate = dateFormatter.format(new Date(`${note.date}T00:00:00`))
@@ -32,7 +34,7 @@ export function NoteCard({ note }: NoteCardProps) {
           {' · '}
           {note.readingTime}
         </p>
-        <h3 className={styles.title}>{note.title}</h3>
+        <Heading className={styles.title}>{note.title}</Heading>
         <p className={styles.excerpt}>{note.excerpt}</p>
         <svg
           className={styles.arrow}

@@ -13,6 +13,7 @@ export interface PortfolioCardProps {
   accent?: Accent
   /** Arbitrary media, illustration, or preview rendered on the accent panel. */
   media: ReactNode
+  headingLevel?: 'h2' | 'h3'
   className?: string
 }
 
@@ -25,12 +26,14 @@ export function PortfolioCard({
   to,
   accent = 'purple',
   media,
+  headingLevel = 'h3',
   className,
 }: PortfolioCardProps) {
+  const Heading = headingLevel
   return (
     <article className={[styles.card, className].filter(Boolean).join(' ')}>
       <div className={styles.text}>
-        <h3 className={styles.title}>{title}</h3>
+        <Heading className={styles.title}>{title}</Heading>
         <p className={styles.meta}>{meta}</p>
         <p className={styles.summary}>{summary}</p>
         <Button to={to}>{buttonLabel}</Button>

@@ -27,7 +27,7 @@ export function NotesPage() {
             {notes.map((note, index) => (
               <li key={note.slug}>
                 <Reveal delayMs={index * 80}>
-                  <NoteCard note={note} />
+                  <NoteCard note={note} headingLevel="h2" />
                 </Reveal>
               </li>
             ))}
