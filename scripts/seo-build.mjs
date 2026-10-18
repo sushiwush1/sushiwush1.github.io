@@ -263,7 +263,7 @@ writeFileSync(join(dist, 'sitemap.xml'), sitemap)
 
 // ---------- llms.txt ----------
 const bullets = (items) => items.map((i) => `- ${plain(i)}`).join('\n')
-const summary = `${site.name} is an HR and People Operations professional based in ${site.location} and willing to relocate. She holds an M.S. in Industrial-Organizational Psychology from the University of Hartford (GPA 3.88, May 2026) and has experience in full-cycle recruiting, residential life operations and counseling. She is looking for HR Generalist, People Operations, Talent Acquisition or Recruiting Coordinator roles and can start right away.`
+const summary = `${site.name} is an HR generalist based in ${site.location} and willing to relocate. She holds an M.S. in Industrial-Organizational Psychology from the University of Hartford (GPA 3.88, May 2026) and has supported employee relations, onboarding, engagement and HR operations across consulting, higher education and team leadership roles. She is looking for HR Generalist, HR Business Partner or People Operations roles and can start right away.`
 
 const llms = `# ${site.name}
 
@@ -271,7 +271,7 @@ const llms = `# ${site.name}
 
 ## Quick facts
 
-- Role focus: HR Generalist, People Operations, Talent Acquisition, Recruiting Coordinator, Training and Development
+- Role focus: HR Generalist, HR Business Partner, People Operations, Employee Relations, Training and Development
 - Location: ${site.location}, willing to relocate; open to on-site, hybrid and remote work
 - Employment types: full-time, contract and 1099
 - Availability: can start right away

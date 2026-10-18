@@ -30,7 +30,7 @@ export const stickers: Sticker[] = [
 export const infoCards: InfoCardItem[] = [
   {
     title: 'My Work',
-    text: 'A few projects from Hartford and my internships, told the way they happened.',
+    text: 'A few projects from Hartford, Aramark and my internships, told the way they happened.',
     to: '/work',
     accent: 'blue',
     doodle: 'Clipboard',
@@ -54,7 +54,7 @@ export const infoCards: InfoCardItem[] = [
 export const selectedWork = {
   heading: 'Selected work',
   intro:
-    'Real projects from my time in **residential life** and **counseling**, written the way they happened.',
+    'Real projects from **residential life**, **team leadership** and **counseling**, written the way they happened.',
   moreLabel: 'Want to see everything?',
   moreButton: 'See All Work',
   featuredCount: 4,
@@ -95,12 +95,14 @@ export const process = {
 
 export const numbers = {
   heading: 'A few numbers',
-  intro: 'Some figures from my **recruiting work** in India and my **graduate studies** in the US.',
+  intro:
+    'Some figures from my **HR work** in India, my **team leadership** in Connecticut and my **graduate studies**.',
   facts: [
     { value: '20+', label: 'Client mandates recruited for', accent: 'purple' },
     { value: '30%', label: 'Reduction in time-to-hire', accent: 'green' },
     { value: '25%', label: 'Increase in client satisfaction', accent: 'pink' },
     { value: '3,000+', label: 'Residents in my campus community', accent: 'blue' },
+    { value: '10', label: 'Team members I led and coached', accent: 'lime' },
     { value: '3.88', label: 'GPA in my I-O Psychology M.S.', accent: 'yellow' },
   ] satisfies Fact[],
 }
@@ -108,7 +110,7 @@ export const numbers = {
 export const experienceSection = {
   heading: 'Experience and education',
   intro:
-    'Two countries, two degrees in **psychology**, and work that has always centered on **people**.',
+    'Two countries, two degrees in **psychology**, and work that has always centered on **people** and the managers who support them.',
 }
 
 export const notesSection = {

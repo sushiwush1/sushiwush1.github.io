@@ -3,7 +3,7 @@ import type { FaqItem } from './types'
 export const contactPage = {
   heading: 'How can I help your team?',
   intro:
-    'If you are hiring for HR, people operations or recruiting, I would love to hear about the role.',
+    'If you are hiring for an HR generalist, HR business partner or people operations role, I would love to hear about it.',
   cardHeading: "Let's get in touch",
   cardIntro: 'Send a message here, email me directly, or connect with me on LinkedIn.',
   rows: [
@@ -40,7 +40,7 @@ export const contactPage = {
     {
       question: 'What kind of roles are you looking for?',
       answer:
-        'HR Generalist, People Operations and Talent Acquisition or Recruiting Coordinator roles are my main focus. I am also interested in training and development work.',
+        'HR Generalist, HR Business Partner and People Operations roles are my main focus, especially where I get to support employee relations and partner with managers. I am also interested in training and development work.',
     },
     {
       question: 'When can you start?',

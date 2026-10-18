@@ -3,7 +3,7 @@ import type { WorkItem } from './types'
 export const workPage = {
   heading: 'My work',
   intro:
-    'Projects from **residential life** at the University of Hartford and my **counseling internship** in India. Each one is something I did myself or with my team.',
+    'Projects from **residential life** at the University of Hartford, **team leadership** at Aramark and my **counseling internship** in India. Each one is something I did myself or with my team.',
   relatedHeading: 'More work',
   relatedButton: 'See All Work',
   labels: {
@@ -54,6 +54,81 @@ export const work: WorkItem[] = [
     ],
     outcome: [
       'The director adopted the category structure, and it is still used as the template for RA training.',
+    ],
+  },
+  {
+    slug: 'leading-a-team-of-ten',
+    title: 'Leading and coaching a team of ten',
+    tags: 'Team leadership, Process improvement',
+    summary:
+      'I managed a ten person team at Aramark, trained them on the workflows we relied on, and held a clear standard for performance. Efficiency went up 20%, and the data work alongside it cut shortages and errors.',
+    accent: 'blue',
+    doodles: ['Trophy', 'Target', 'Sparkle'],
+    where: 'Aramark, Connecticut',
+    role: 'Student Manager',
+    when: 'Oct 2024 to May 2025',
+    context: [
+      "I took on a student manager role at Aramark while I was studying for my Master's, which meant running a shift and a team alongside my classes.",
+      'The work came with real numbers attached: inventory that had to match demand, deliveries that had to arrive, and paperwork that had to be right.',
+    ],
+    steps: [
+      {
+        title: 'Trained and coached the team',
+        text: 'I led a team of 10, trained them on the workflows, and set a clear standard for performance and accountability so everyone knew what good looked like.',
+      },
+      {
+        title: 'Built the reporting',
+        text: 'I built Excel dashboards and KPI reports with pivot tables and advanced formulas, tracking inventory against demand to find the planning gaps that kept coming back.',
+      },
+      {
+        title: 'Fixed the ordering process',
+        text: 'Using what the forecasting showed, I reworked how we reordered and replenished stock.',
+      },
+      {
+        title: 'Worked with suppliers',
+        text: 'I coordinated with suppliers on delivery discrepancies and data issues, and redesigned the logistics schedule around what kept going wrong.',
+      },
+    ],
+    outcome: [
+      'Operational efficiency improved by 20%, inventory shortages dropped by 30%, and delivery delays fell by 20%.',
+      'Standardizing how we entered and processed data cut invoice documentation errors by 25%.',
+    ],
+  },
+  {
+    slug: 'on-duty',
+    title: 'Being on duty for a campus community',
+    tags: 'Mediation, Confidential reporting',
+    summary:
+      'On a weekly duty rotation I responded to emergencies, wellness checks and conflicts between roommates. As a Title IX reporter and Campus Security Authority, I knew when and how to escalate.',
+    accent: 'pink',
+    doodles: ['Heart', 'PeopleGroup', 'Compass'],
+    where: 'University of Hartford, Office of Residential Life',
+    role: 'Graduate Assistant',
+    when: '2025 to 2026',
+    context: [
+      'Residential life staff are the first people students call when something goes wrong, at any hour.',
+      'Some of those situations are sensitive, and the university designates certain staff to report them properly.',
+    ],
+    steps: [
+      {
+        title: 'Took duty shifts',
+        text: 'I was part of a weekly duty rotation covering campus emergencies, wellness checks and policy violations.',
+      },
+      {
+        title: 'Mediated roommate conflicts',
+        text: 'I sat down with roommates who were struggling to live together and helped them find something workable.',
+      },
+      {
+        title: 'Documented incidents',
+        text: 'I wrote up each incident clearly so the right people had an accurate record.',
+      },
+      {
+        title: 'Reported and escalated',
+        text: 'As a mandatory Title IX reporter and Campus Security Authority, I worked with Public Safety, Counseling Services and Student Conduct.',
+      },
+    ],
+    outcome: [
+      'This is the part of the role closest to employee relations work: listening to both sides, writing things down accurately, and knowing when a situation needs to go further.',
     ],
   },
   {
@@ -128,43 +203,6 @@ export const work: WorkItem[] = [
     ],
     outcome: [
       'Careful records are what let everything else in a residence hall run smoothly, especially in the weeks when everyone arrives or leaves at once.',
-    ],
-  },
-  {
-    slug: 'on-duty',
-    title: 'Being on duty for a campus community',
-    tags: 'Mediation, Confidential reporting',
-    summary:
-      'On a weekly duty rotation I responded to emergencies, wellness checks and conflicts between roommates. As a Title IX reporter and Campus Security Authority, I knew when and how to escalate.',
-    accent: 'pink',
-    doodles: ['Heart', 'PeopleGroup', 'Compass'],
-    where: 'University of Hartford, Office of Residential Life',
-    role: 'Graduate Assistant',
-    when: '2025 to 2026',
-    context: [
-      'Residential life staff are the first people students call when something goes wrong, at any hour.',
-      'Some of those situations are sensitive, and the university designates certain staff to report them properly.',
-    ],
-    steps: [
-      {
-        title: 'Took duty shifts',
-        text: 'I was part of a weekly duty rotation covering campus emergencies, wellness checks and policy violations.',
-      },
-      {
-        title: 'Mediated roommate conflicts',
-        text: 'I sat down with roommates who were struggling to live together and helped them find something workable.',
-      },
-      {
-        title: 'Documented incidents',
-        text: 'I wrote up each incident clearly so the right people had an accurate record.',
-      },
-      {
-        title: 'Reported and escalated',
-        text: 'As a mandatory Title IX reporter and Campus Security Authority, I worked with Public Safety, Counseling Services and Student Conduct.',
-      },
-    ],
-    outcome: [
-      'This is the part of the role closest to employee relations work: listening to both sides, writing things down accurately, and knowing when a situation needs to go further.',
     ],
   },
   {
